@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-def greet_user(**kwargs):
-    # *args =>  a tuple
-    # **kwargs => dictionary
-    print(kwargs)
+def greet_user(name):
+    # for key in kwargs:
+    #     print(f"{key} = {kwargs[key]}")
+    pass
+    
 
 # greet_user("Obed")
-{"fname" : "obed", "lname":"ehoneah" }
-greet_user("Obed", "Ehoneah", 99)
+name = {"fname":"obed"}
+greet_user(name)
