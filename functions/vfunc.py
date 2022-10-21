@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 
-def greet_user(name):
-    # for key in kwargs:
-    #     print(f"{key} = {kwargs[key]}")
-    pass
+def greet_user(**kwargs):
+    for key in kwargs:
+        print(f"{key} = {kwargs[key]}")
     
 
 # greet_user("Obed")
-name = {"fname":"obed"}
-greet_user(name)
+greet_user(fname="obed", lname="Ehoneah")
